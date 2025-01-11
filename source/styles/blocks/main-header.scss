@@ -1,0 +1,22 @@
+.main-header {
+  background-image: url("../../images/logo/logo-text.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 23px;
+  background-size: 101px 18px;
+  position: relative;
+  padding-top: 65px;
+}
+
+//@media (min-width: $desktop) {
+//  background-image: none;
+//}
+
+//@media (max-width: $tablet) {
+//  background-image: none;
+//}
+
+.main-header__logo {
+  position: absolute;
+  top: 13px;
+  left: 21px;
+}
