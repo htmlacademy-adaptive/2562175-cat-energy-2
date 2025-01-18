@@ -1,24 +1,70 @@
+.advantages {
+  padding-top: 19px;
+  margin: 0 21px;
+}
+
 .advantages__title {
-  padding: 0;
-  margin: 0;
+  margin: 0 0 40px;
   font-family: $oswald;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
-  text-align: left;
-  color: #000000;
+  color: $black;
 }
 
 .advantages__list {
   padding: 0;
   margin: 0;
+  list-style: none;
+}
+
+.advantages__item {
+  font-size: 14px;
+  line-height: 18px;
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 80px;
+  min-height: 60px;
+  box-sizing: border-box;
+  padding-top: 3px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $green;
+    z-index: 5;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--leaf::before {
+    background-image: url("../../images/svg/icon-leaf.svg");
+  }
+
+  &--powder::before {
+    background-image: url("../../images/svg/icon-powder.svg");
+  }
+
+  &--food::before {
+    background-image: url("../../images/svg/icon-food.svg");
+  }
+
+  &--clock::before {
+    background-image: url("../../images/svg/icon-clock.svg");
+  }
+}
+
+.advantages__item:last-child {
+  margin-bottom: 0;
 }
 
 .advantages__description {
   padding: 0;
   margin: 0;
   font-size: 14px;
-  font-weight: 400;
   line-height: 18px;
-  text-align: center;
 }
