@@ -2,3 +2,19 @@
   padding: 0;
   margin: 0;
 }
+
+.social__link {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  min-width: 28px;
+  min-height: 28px;
+  display: block;
+  transition: all 1.3s;
+}
+
+.social__link--vkontakte {
+mask-image: url(../../images/svg/icon-vkontakte.svg);
+mask-size: 28px 22px;
+mask-repeat: no-repeat;
+background-color: #666666;
+}
