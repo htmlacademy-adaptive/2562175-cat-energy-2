@@ -12,6 +12,12 @@
     padding: 29px 0 0 233px;
     margin: 0 35px 0 27px;
   }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 71px 0 14px;
+  }
 }
 
 .main-header__logo {
@@ -22,5 +28,10 @@
   @media (min-width: $tablet) {
     top: 26px;
     left: 3px;
+  }
+
+  @media (min-width: $desktop) {
+    top: 55px;
+    left: 0;
   }
 }

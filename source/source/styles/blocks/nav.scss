@@ -34,7 +34,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  border-top: 1px solid #ff0000;
+  border-top: 1px solid #e6e6e6;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -42,6 +42,10 @@
     justify-content: flex-end;
     flex-wrap: wrap;
     gap: 34px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
   }
 }
 
@@ -92,5 +96,12 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #ffffff;
   }
 }
