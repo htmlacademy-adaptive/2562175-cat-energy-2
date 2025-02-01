@@ -129,9 +129,11 @@
       <div class="main-footer__map">
         <div class="main-footer__map map">
           <picture>
-
-            <img src="images/backgrounds/location.png" width="320" height="362" alt="Карта">
-
+            <source width="1440" height="400" type="image/png" media="(min-width: 1440px)"
+            srcset="images/backgrounds/location-desktop@1x.png">
+            <source width="768" height="400" type="image/png" media="(min-width: 768px)"
+            srcset="images/backgrounds/location-tablet@1x.png">
+            <img src="images/backgrounds/location-mobile@1x.png" width="320" height="362" alt="Карта">
           </picture>
         </div>
         <div class="main-footer__map iframe" id="map">

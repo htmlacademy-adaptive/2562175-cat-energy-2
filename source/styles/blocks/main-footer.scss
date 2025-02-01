@@ -1,7 +1,19 @@
+.main-footer__map {
+  position: relative;
+}
+
+.main-footer__map map {
+  position: absolute;
+}
+
 .main-footer__map iframe {
   width: 100%;
   height: 362px;
   z-index: 1;
+
+  @media (min-width: $tablet) and (min-width: $desktop) {
+    height: 400px;
+  }
 }
 
 .main-footer__logo text {
@@ -12,12 +24,4 @@
 .main-footer__copyright {
   display: flex;
   justify-content: space-between;
-}
-
-.main-footer__map {
-  position: relative;
-}
-
-.main-footer__map map {
-  position: absolute;
 }

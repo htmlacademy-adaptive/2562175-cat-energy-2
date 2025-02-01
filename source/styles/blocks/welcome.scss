@@ -15,9 +15,9 @@
       content: "";
       background-image:
         image-set(url("../../images/backgrounds/index-can-tablet@1x.webp") type("image/webp") 1x,
-          url("../../images/backgrounds/index-can-tablet@2x.webp") type("image/webp") 2x,
-          url("../../images/backgrounds/index-can-tablet@1x.png") type("image/png") 1x,
-          url("../../images/backgrounds/index-can-tablet@2x.png") type("image/png") 2x);
+        url("../../images/backgrounds/index-can-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/backgrounds/index-can-tablet@1x.png") type("image/png") 1x,
+        url("../../images/backgrounds/index-can-tablet@2x.png") type("image/png") 2x);
 
       background-repeat: no-repeat;
       background-position: 0 0;
@@ -46,9 +46,9 @@
       background-position: 0 0;
       background-image:
         image-set(url("../../images/backgrounds/index-background-desktop@1x.webp") type("image/webp") 1x,
-          url("../../images/backgrounds/index-background-desktop@2x.webp") type("image/webp") 2x,
-          url("../../images/backgrounds/index-background-desktop@1x.jpg") type("image/jpg") 1x,
-          url("../../images/backgrounds/index-background-desktop@2x.jpg") type("image/jpg") 2x);
+        url("../../images/backgrounds/index-background-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/backgrounds/index-background-desktop@1x.jpg") type("image/jpg") 1x,
+        url("../../images/backgrounds/index-background-desktop@2x.jpg") type("image/jpg") 2x);
     }
 
 
@@ -81,9 +81,9 @@
       content: "";
       background-image:
         image-set(url("../../images/backgrounds/index-can-desktop@1x.webp") type("image/webp") 1x,
-          url("../../images/backgrounds/index-can-desktop@2x.webp") type("image/webp") 2x,
-          url("../../images/backgrounds/index-can-desktop@1x.png") type("image/png") 1x,
-          url("../../images/backgrounds/index-can-desktop@2x.png") type("image/png") 2x);
+        url("../../images/backgrounds/index-can-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/backgrounds/index-can-desktop@1x.png") type("image/png") 1x,
+        url("../../images/backgrounds/index-can-desktop@2x.png") type("image/png") 2x);
 
       background-repeat: no-repeat;
       background-position: 0 0;
@@ -121,9 +121,9 @@
     background-position: 0 0;
     background-image:
       image-set(url("../../images/backgrounds/index-can-mobile@1x.webp") type("image/webp") 1x,
-        url("../../images/backgrounds/index-can-mobile@2x.webp") type("image/webp") 2x,
-        url("../../images/backgrounds/index-can-mobile@1x.png") type("image/png") 1x,
-        url("../../images/backgrounds/index-can-mobile@2x.png") type("image/png") 2x);
+      url("../../images/backgrounds/index-can-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/backgrounds/index-can-mobile@1x.png") type("image/png") 1x,
+      url("../../images/backgrounds/index-can-mobile@2x.png") type("image/png") 2x);
 
     background-size: 280px 270px;
     z-index: 10;
@@ -168,9 +168,9 @@
     background-position: center top;
     background-image:
       image-set(url("../../images/backgrounds/index-background-mobile@1x.webp") type("image/webp") 1x,
-        url("../../images/backgrounds/index-background-mobile@2x.webp") type("image/webp") 2x,
-        url("../../images/backgrounds/index-background-mobile@1x.jpg") type("image/jpg") 1x,
-        url("../../images/backgrounds/index-background-mobile@2x.jpg") type("image/jpg") 2x);
+      url("../../images/backgrounds/index-background-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/backgrounds/index-background-mobile@1x.jpg") type("image/jpg") 1x,
+      url("../../images/backgrounds/index-background-mobile@2x.jpg") type("image/jpg") 2x);
 
     background-size: auto 100%;
     z-index: 1;
