@@ -5,7 +5,7 @@
 }
 
 .problems__item {
-  padding: 10px 0 0;
+  padding: 19px 21px 19px;
   margin: 0 20px 20px;
   background-color: $bg-grey-1;
   position: relative;
@@ -48,8 +48,8 @@
 
 .problems__item--slim .problems__title {
   &::after {
-    top: -2px;
-    left: 7px;
+    top: 0px;
+    left: 8px;
     background-image: url("../../images/svg/cat-slim.svg");
     width: 36px;
     height: 50px;
@@ -63,7 +63,7 @@
 
 .problems__item--gain .problems__title {
   &::after {
-    top: 12px;
+    top: 16px;
     left: -8px;
     background-image: url("../../images/svg/cat-powerful.svg");
     width: 67px;
@@ -71,8 +71,8 @@
   }
 
   &::before {
-    top: 3px;
-    left: 2px;
+    top: 5px;
+    left: 1px;
   }
 }
 
@@ -81,8 +81,8 @@
 }
 
 .problems__text {
-  padding: 0 10px 21px 0;
-  margin: 0 0 18px;
+  padding: 0 10px 23px 0;
+  margin: 0px 0 19px;
   font-size: 14px;
   line-height: 18px;
   border-bottom: 1px solid $text;
@@ -97,7 +97,6 @@
   text-decoration: none;
   display: inline-block;
   position: relative;
-  padding-left: 21px;
 
   &::after {
     content: "";
