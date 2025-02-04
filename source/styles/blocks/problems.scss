@@ -10,6 +10,11 @@
   background-color: $bg-grey-1;
   position: relative;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    padding: 62px 20px 58px;
+    margin: 0 30px 30px;
+  }
 }
 
 .problems__title {
@@ -44,6 +49,25 @@
     z-index: 10;
     background-size: cover;
   }
+
+  @media (min-width: $tablet) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 14px 0 0px 32px;
+    margin-bottom: 10px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 1px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: $green;
+      z-index: 1;
+    }
+  }
 }
 
 .problems__item--slim .problems__title {
@@ -53,11 +77,25 @@
     background-image: url("../../images/svg/cat-slim.svg");
     width: 36px;
     height: 50px;
+
+    @media (min-width: $tablet) {
+      width: 140px;
+      height: 194px;
+      top: 18px;
+      left: 100%;
+      margin-left: -213px;
+    }
   }
 
   &::before {
     top: 4px;
     left: 1px;
+
+    @media (min-width: $tablet) {
+      top: 29px;
+      left: 100%;
+      margin-left: -243px;
+    }
   }
 }
 
@@ -68,11 +106,25 @@
     background-image: url("../../images/svg/cat-powerful.svg");
     width: 67px;
     height: 28px;
+
+    @media (min-width: $tablet) {
+      width: 268px;
+      height: 112px;
+      top: 72px;
+      left: 100%;
+      margin-left: -277px;
+    }
   }
 
   &::before {
-    top: 5px;
+    top: 4px;
     left: 1px;
+
+    @media (min-width: $tablet) {
+      top: 28px;
+      left: 100%;
+      margin-left: -243px;
+    }
   }
 }
 
@@ -86,6 +138,16 @@
   font-size: 14px;
   line-height: 18px;
   border-bottom: 1px solid $text;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $black;
+    border-bottom: 0;
+    padding: 0px 293px 0px 33px;
+    margin-bottom: 52px;
+  }
 }
 
 .problems__link {
@@ -109,9 +171,20 @@
     background-position: right center;
     background-repeat: no-repeat;
     transition: widht 0.5s ease;
+
+    @media (min-width: $tablet) {
+      padding-top: 16px;
+    }
   }
 
   &:hover::after {
     width: 32px;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0 11px 0 32px
   }
 }
