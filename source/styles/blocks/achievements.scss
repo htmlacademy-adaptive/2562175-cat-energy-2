@@ -1,6 +1,10 @@
 .achievements {
   background-color: $bg-grey-2;
   padding: 25px 20px 0;
+
+  @media (min-width: $tablet) {
+    padding: 25px 30px 0;
+  }
 }
 
 .achievements__title {
@@ -11,6 +15,13 @@
   font-weight: 400;
   line-height: 40px;
   color: &black;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    padding: 22px 0 19px 0;
+  }
 }
 
 .achievements__text {
@@ -19,6 +30,13 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 55px;
+    text-align: right;
+  }
 }
 
 .achievements__list {
@@ -28,6 +46,12 @@
   display: flex;
   justify-content: space-between;
   max-width: 333px;
+
+  @media (min-width: $tablet) {
+    max-width: 716px;
+    justify-content: flex-start;
+    gap: 43px;
+  }
 }
 
 .achievements__item {
@@ -48,10 +72,13 @@
   width: 91px;
   text-transform: uppercase;
   text-align: center;
-  // flex-grow: 1;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 37px;
+    min-width: 131px;
+
+  }
 }
 
 .achievements__name {
@@ -62,6 +89,12 @@
   text-align: center;
   width: 80px;
   background: $bg-grey-2;
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 14px;
+    width: 150px;
+  }
 }
 
 .achievements__costs {
@@ -73,4 +106,8 @@
   color: $black;
   text-transform: uppercase;
   margin-left: 48px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+  }
 }
