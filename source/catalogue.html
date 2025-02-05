@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Кэт энерджи</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="favicons/icon-152.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png"><!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body body">
+  <header class="main-header">
+    <a class="main-header__logo" href="#">
+      <picture>
+        <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)"
+          srcset="images/logo/logo-desktop.svg">
+        <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)"
+          srcset="images/logo/logo-tablet.svg">
+        <img class="main-header__logo-image" src="images/logo/logo-mobile.svg" alt="Логотип Сайта Кот Энерджи"
+          width="33" height="38">
+      </picture>
+    </a>
+    <nav class="nav">
+      <button class="nav__toggle" type="button">
+        <span class="visually-hidden">Открыть/закрыть меню</span>
+      </button>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#">Главная</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Каталог продукции</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="main-products">
+      <h2 class="main-products__title">Каталог продукции</h2>
+      <ul class="main-products__cards">
+        <li class="main-products__card">
+          <div class="main-products__link">
+            <a href="#" class="main-products__image">
+              <picture>
+
+              </picture>
+          </div>
+          <div class="main-products__info">
+            <a href="#" class="main-products__name">Cat Energy PRO 500 г</a>
+            <ul class="main-products__details">
+              <li class="main-products__detail">
+                <span class="main-products__detail-name">Масса</span>
+                <span class="main-products__detail-value">500 г</span>
+              </li>
+
+
+            </ul>
+            </a>
+          </div>
+          <a href="#" class="main-products__batton">заказать</a>
+        </li>
+
+        
+      </ul>
+    </section>
+  </main>
