@@ -31,10 +31,10 @@
       </button>
       <ul class="nav__list">
         <li class="nav__item">
-          <a class="nav__link" href="#">Главная</a>
+          <a class="nav__link" href="index.html">Главная</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#">Каталог продукции</a>
+          <a class="nav__link" href="catalogue.html">Каталог продукции</a>
         </li>
         <li class="nav__item">
           <a class="nav__link" href="#">Подбор программы</a>
@@ -45,31 +45,343 @@
 
   <main class="main">
     <section class="main-products">
-      <h2 class="main-products__title">Каталог продукции</h2>
+      <h2 class="main-products__title inner-title">Каталог продукции</h2>
       <ul class="main-products__cards">
-        <li class="main-products__card">
-          <div class="main-products__link">
-            <a href="#" class="main-products__image">
+
+
+        <li class="main-products__card card">
+          <div class="card__container">
+            <a href="#" class="card__image-link">
               <picture>
+                <!-- <source type="image/webp" media="(min-width: 1440px)"
+                srcset="images/backgrounds/map-desktop@1x.webp 1x, images/backgrounds/map-desktop@2x.webp 2x" width="1440"
+                height="400">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="images/backgrounds/map-tablet@1x.webp 1x, images/backgrounds/map-tablet@2x.webp 2x" width="768"
+                height="400"> -->
+                <source type="image/webp"
+                  srcset="images/goods/chicken-mobile-500@1x.webp 1x, images/goods/chicken-mobile-500@2x.webp 2x"
+                  width="140" height="107">
 
+                <!-- <source type="image/jpg" media="(min-width: 1440px)"
+                srcset="images/backgrounds/map-desktop@1x.jpg 1x, images/backgrounds/map-desktop@2x.jpg 2x" width="1440"
+                height="400">
+              <source type="image/jpg" media="(min-width: 768px)"
+                srcset="images/backgrounds/map-tablet@1x.jpg 1x, images/backgrounds/map-tablet@2x.jpg 2x" width="768"
+                height="400"> -->
+                <img class="card__image" src="images/goods/chicken-mobile-500@1x.png"
+                  srcset="images/goods/chicken-mobile-500@2x.png 2x" width="140" height="107"
+                  alt="Карточка кошачьего корма с курицей 500г">
               </picture>
-          </div>
-          <div class="main-products__info">
-            <a href="#" class="main-products__name">Cat Energy PRO 500 г</a>
-            <ul class="main-products__details">
-              <li class="main-products__detail">
-                <span class="main-products__detail-name">Масса</span>
-                <span class="main-products__detail-value">500 г</span>
-              </li>
-
-
-            </ul>
             </a>
+            <div class="card__info">
+              <a href="#" class="card__name">Cat Energy PRO 500 г</a>
+              <ul class="card__details">
+                <li class="detail">
+                  <span class="detail__name">Масса</span>
+                  <span class="detail__value">500 г</span>
+                </li>
+                <li class="detail">
+                  <span class="detail__name">Вкус</span>
+                  <span class="detail__value">Курица</span>
+                </li>
+                <li class="detail">
+                  <span class="detail__name">Цена</span>
+                  <span class="detail__value">700 ₽</span>
+                </li>
+              </ul>
+            </div>
           </div>
-          <a href="#" class="main-products__batton">заказать</a>
+          <a href="#" class="card__batton">заказать</a>
+        </li>
+        <li class="main-products__card card">
+          <div class="card__container">
+            <a href="#" class="card__image-link">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1440px)"
+                srcset="images/backgrounds/map-desktop@1x.webp 1x, images/backgrounds/map-desktop@2x.webp 2x" width="1440"
+                height="400">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="images/backgrounds/map-tablet@1x.webp 1x, images/backgrounds/map-tablet@2x.webp 2x" width="768"
+                height="400"> -->
+                <source type="image/webp"
+                  srcset="images/goods/chicken-mobile-1000@1x.webp 1x, images/goods/chicken-mobile-1000@2x.webp 2x"
+                  width="140" height="107">
+
+                <!-- <source type="image/jpg" media="(min-width: 1440px)"
+                srcset="images/backgrounds/map-desktop@1x.jpg 1x, images/backgrounds/map-desktop@2x.jpg 2x" width="1440"
+                height="400">
+              <source type="image/jpg" media="(min-width: 768px)"
+                srcset="images/backgrounds/map-tablet@1x.jpg 1x, images/backgrounds/map-tablet@2x.jpg 2x" width="768"
+                height="400"> -->
+                <img class="card__image" src="images/goods/chicken-mobile-1000@1x.png"
+                  srcset="images/goods/chicken-mobile-1000@2x.png 2x" width="140" height="107"
+                  alt="Карточка кошачьего корма с курицей 1000г">
+              </picture>
+            </a>
+            <div class="card__info">
+              <a href="#" class="card__name">Cat Energy PRO 1000 г</a>
+              <ul class="card__details">
+                <li class="detail">
+                  <span class="detail__name">Масса</span>
+                  <span class="detail__value">1000 г</span>
+                </li>
+                <li class="detail">
+                  <span class="detail__name">Вкус</span>
+                  <span class="detail__value">Курица</span>
+                </li>
+                <li class="detail">
+                  <span class="detail__name">Цена</span>
+                  <span class="detail__value">1000 ₽</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="card__batton">заказать</a>
         </li>
 
+
+        <li class="main-products__card card">
+          <div class="card__container">
+            <a href="#" class="card__image-link">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1440px)"
+                srcset="images/backgrounds/map-desktop@1x.webp 1x, images/backgrounds/map-desktop@2x.webp 2x" width="1440"
+                height="400">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="images/backgrounds/map-tablet@1x.webp 1x, images/backgrounds/map-tablet@2x.webp 2x" width="768"
+                height="400"> -->
+                <source type="image/webp"
+                  srcset="images/goods/fish-mobile-500@1x.webp 1x, images/goods/fish-mobile-500@2x.webp 2x"
+                  width="140" height="107">
+
+                <!-- <source type="image/jpg" media="(min-width: 1440px)"
+                srcset="images/backgrounds/map-desktop@1x.jpg 1x, images/backgrounds/map-desktop@2x.jpg 2x" width="1440"
+                height="400">
+              <source type="image/jpg" media="(min-width: 768px)"
+                srcset="images/backgrounds/map-tablet@1x.jpg 1x, images/backgrounds/map-tablet@2x.jpg 2x" width="768"
+                height="400"> -->
+                <img class="card__image" src="images/goods/fish-mobile-500@1x.png"
+                  srcset="images/goods/fish-mobile-500@2x.png 2x" width="140" height="107"
+                  alt="Карточка кошачьего корма с рыбой 500г">
+              </picture>
+            </a>
+            <div class="card__info">
+              <a href="#" class="card__name">Cat Energy PRO 500 г</a>
+              <ul class="card__details">
+                <li class="detail">
+                  <span class="detail__name">Масса</span>
+                  <span class="detail__value">500 г</span>
+                </li>
+                <li class="detail">
+                  <span class="detail__name">Вкус</span>
+                  <span class="detail__value">Рыба</span>
+                </li>
+                <li class="detail">
+                  <span class="detail__name">Цена</span>
+                  <span class="detail__value">700 ₽</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="card__batton">заказать</a>
+        </li>
+                <li class="main-products__card card">
+          <div class="card__container">
+            <a href="#" class="card__image-link">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1440px)"
+                srcset="images/backgrounds/map-desktop@1x.webp 1x, images/backgrounds/map-desktop@2x.webp 2x" width="1440"
+                height="400">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="images/backgrounds/map-tablet@1x.webp 1x, images/backgrounds/map-tablet@2x.webp 2x" width="768"
+                height="400"> -->
+                <source type="image/webp"
+                  srcset="images/goods/fish-mobile-1000@1x.webp 1x, images/goods/fish-mobile-1000@2x.webp 2x"
+                  width="140" height="107">
+
+                <!-- <source type="image/jpg" media="(min-width: 1440px)"
+                srcset="images/backgrounds/map-desktop@1x.jpg 1x, images/backgrounds/map-desktop@2x.jpg 2x" width="1440"
+                height="400">
+              <source type="image/jpg" media="(min-width: 768px)"
+                srcset="images/backgrounds/map-tablet@1x.jpg 1x, images/backgrounds/map-tablet@2x.jpg 2x" width="768"
+                height="400"> -->
+                <img class="card__image" src="images/goods/fish-mobile-1000@1x.png"
+                  srcset="images/goods/fish-mobile-1000@2x.png 2x" width="140" height="107"
+                  alt="Карточка кошачьего корма с рыбой 1000г">
+              </picture>
+            </a>
+            <div class="card__info">
+              <a href="#" class="card__name">Cat Energy PRO 1000 г</a>
+              <ul class="card__details">
+                <li class="detail">
+                  <span class="detail__name">Масса</span>
+                  <span class="detail__value">1000 г</span>
+                </li>
+                <li class="detail">
+                  <span class="detail__name">Вкус</span>
+                  <span class="detail__value">Рыба</span>
+                </li>
+                <li class="detail">
+                  <span class="detail__name">Цена</span>
+                  <span class="detail__value">1000 ₽</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="card__batton">заказать</a>
+        </li>
+
+
+        <li class="main-products__card card">
+          <div class="card__container">
+            <a href="#" class="card__image-link">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1440px)"
+                srcset="images/backgrounds/map-desktop@1x.webp 1x, images/backgrounds/map-desktop@2x.webp 2x" width="1440"
+                height="400">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="images/backgrounds/map-tablet@1x.webp 1x, images/backgrounds/map-tablet@2x.webp 2x" width="768"
+                height="400"> -->
+                <source type="image/webp"
+                  srcset="images/goods/buckwheat-mobile-500@1x.webp 1x, images/goods/buckwheat-mobile-500@2x.webp 2x"
+                  width="140" height="107">
+
+                <!-- <source type="image/jpg" media="(min-width: 1440px)"
+                srcset="images/backgrounds/map-desktop@1x.jpg 1x, images/backgrounds/map-desktop@2x.jpg 2x" width="1440"
+                height="400">
+              <source type="image/jpg" media="(min-width: 768px)"
+                srcset="images/backgrounds/map-tablet@1x.jpg 1x, images/backgrounds/map-tablet@2x.jpg 2x" width="768"
+                height="400"> -->
+                <img class="card__image" src="images/goods/buckwheat-mobile-500@1x.png"
+                  srcset="images/goods/buckwheat-mobile-500@2x.png 2x" width="140" height="107"
+                  alt="Карточка кошачьего корма с гречкой 500г">
+              </picture>
+            </a>
+            <div class="card__info">
+              <a href="#" class="card__name">Cat Energy SLIM 500 г</a>
+              <ul class="card__details">
+                <li class="detail">
+                  <span class="detail__name">Масса</span>
+                  <span class="detail__value">500 г</span>
+                </li>
+                <li class="detail">
+                  <span class="detail__name">Вкус</span>
+                  <span class="detail__value">Гречка</span>
+                </li>
+                <li class="detail">
+                  <span class="detail__name">Цена</span>
+                  <span class="detail__value">400 ₽</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="card__batton">заказать</a>
+        </li>
+        <li class="main-products__card card">
+          <div class="card__container">
+            <a href="#" class="card__image-link">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1440px)"
+                srcset="images/backgrounds/map-desktop@1x.webp 1x, images/backgrounds/map-desktop@2x.webp 2x" width="1440"
+                height="400">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="images/backgrounds/map-tablet@1x.webp 1x, images/backgrounds/map-tablet@2x.webp 2x" width="768"
+                height="400"> -->
+                <source type="image/webp"
+                  srcset="images/goods/buckwheat-mobile-1000@1x.webp 1x, images/goods/buckwheat-mobile-1000@2x.webp 2x"
+                  width="140" height="107">
+
+                <!-- <source type="image/jpg" media="(min-width: 1440px)"
+                srcset="images/backgrounds/map-desktop@1x.jpg 1x, images/backgrounds/map-desktop@2x.jpg 2x" width="1440"
+                height="400">
+              <source type="image/jpg" media="(min-width: 768px)"
+                srcset="images/backgrounds/map-tablet@1x.jpg 1x, images/backgrounds/map-tablet@2x.jpg 2x" width="768"
+                height="400"> -->
+                <img class="card__image" src="images/goods/buckwheat-mobile-1000@1x.png"
+                  srcset="images/goods/buckwheat-mobile-1000@2x.png 2x" width="140" height="107"
+                  alt="Карточка кошачьего корма с гречкой 500г">
+              </picture>
+            </a>
+            <div class="card__info">
+              <a href="#" class="card__name">Cat Energy SLIM 1000 г</a>
+              <ul class="card__details">
+                <li class="detail">
+                  <span class="detail__name">Масса</span>
+                  <span class="detail__value">1000 г</span>
+                </li>
+                <li class="detail">
+                  <span class="detail__name">Вкус</span>
+                  <span class="detail__value">Гречка</span>
+                </li>
+                <li class="detail">
+                  <span class="detail__name">Цена</span>
+                  <span class="detail__value">700 ₽</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="card__batton">заказать</a>
+        </li>
+
+
+
+        <li class="main-products__card card">
+          <div class="card__container">
+            <a href="#" class="card__image-link">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1440px)"
+                srcset="images/backgrounds/map-desktop@1x.webp 1x, images/backgrounds/map-desktop@2x.webp 2x" width="1440"
+                height="400">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="images/backgrounds/map-tablet@1x.webp 1x, images/backgrounds/map-tablet@2x.webp 2x" width="768"
+                height="400"> -->
+                <source type="image/webp"
+                  srcset="images/goods/rice-mobile-500@1x.webp 1x, images/goods/rice-mobile-500@2x.webp 2x"
+                  width="140" height="107">
+
+                <!-- <source type="image/jpg" media="(min-width: 1440px)"
+                srcset="images/backgrounds/map-desktop@1x.jpg 1x, images/backgrounds/map-desktop@2x.jpg 2x" width="1440"
+                height="400">
+              <source type="image/jpg" media="(min-width: 768px)"
+                srcset="images/backgrounds/map-tablet@1x.jpg 1x, images/backgrounds/map-tablet@2x.jpg 2x" width="768"
+                height="400"> -->
+                <img class="card__image" src="images/goods/rice-mobile-500@1x.png"
+                  srcset="images/goods/rice-mobile-500@2x.png 2x" width="140" height="107"
+                  alt="Карточка кошачьего корма с рисом 500г">
+              </picture>
+            </a>
+            <div class="card__info">
+              <a href="#" class="card__name">Cat Energy SLIM 500 г</a>
+              <ul class="card__details">
+                <li class="detail">
+                  <span class="detail__name">Масса</span>
+                  <span class="detail__value">500 г</span>
+                </li>
+                <li class="detail">
+                  <span class="detail__name">Вкус</span>
+                  <span class="detail__value">Рис</span>
+                </li>
+                <li class="detail">
+                  <span class="detail__name">Цена</span>
+                  <span class="detail__value">500 ₽</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="card__batton">заказать</a>
+        </li>
+
+
+
+      
+
+
+
         
+
+
+
       </ul>
     </section>
   </main>

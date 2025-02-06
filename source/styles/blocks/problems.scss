@@ -5,7 +5,7 @@
 }
 
 .problems__item {
-  padding: 19px 21px 19px;
+  padding: 19px 21px;
   margin: 0 20px 20px;
   background-color: $bg-grey-1;
   position: relative;
@@ -53,7 +53,7 @@
   @media (min-width: $tablet) {
     font-size: 36px;
     line-height: 36px;
-    padding: 14px 0 0px 32px;
+    padding: 14px 0 0 32px;
     margin-bottom: 10px;
 
     &::before {
@@ -72,7 +72,7 @@
 
 .problems__item--slim .problems__title {
   &::after {
-    top: 0px;
+    top: 0;
     left: 8px;
     background-image: url("../../images/svg/cat-slim.svg");
     width: 36px;
@@ -134,7 +134,7 @@
 
 .problems__text {
   padding: 0 10px 23px 0;
-  margin: 0px 0 19px;
+  margin: 0 0 19px;
   font-size: 14px;
   line-height: 18px;
   border-bottom: 1px solid $text;
@@ -145,7 +145,7 @@
     line-height: 24px;
     color: $black;
     border-bottom: 0;
-    padding: 0px 293px 0px 33px;
+    padding: 0 293px 0 33px;
     margin-bottom: 52px;
   }
 }
@@ -185,6 +185,6 @@
     font-size: 20px;
     line-height: 30px;
     text-align: center;
-    padding: 0 11px 0 32px
+    padding: 0 11px 0 32px;
   }
 }

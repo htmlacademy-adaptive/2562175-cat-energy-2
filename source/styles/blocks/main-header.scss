@@ -6,11 +6,13 @@
   position: relative;
   padding-top: 65px;
   z-index: 20;
+  border-bottom: 1px solid $bg-grey-3;
 
   @media (min-width: $tablet) {
     background-image: none;
     padding: 29px 0 0 233px;
     margin: 0 36px 0 30px;
+    border-bottom: none;
   }
 }
 

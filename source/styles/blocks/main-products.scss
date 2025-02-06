@@ -1,13 +1,24 @@
 .main-products {
-    margin: 0 20px;
+
 }
 
 .main-products__title {
-    padding: 0;
-    margin: 30px 0 61px;
-    font-family: $oswald;
-    font-size: 36px;
-    line-height: 36px;
-    color: $black;
-    font-weight: normal;
+  margin-bottom: 39px;
+  padding-top: 27px;
+}
+
+.main-products__cards {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-top: 1px solid $bg-grey-3;
+}
+
+.main-products__more-image {
+  width: 30px;
+  margin: 0 auto 28px;
+}
+
+.main-products__more-title {
+  font-family: $oswald;
 }

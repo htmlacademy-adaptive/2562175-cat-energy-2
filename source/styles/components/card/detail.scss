@@ -1,0 +1,14 @@
+.detail {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  
+  .detail__name {
+    text-align: left;
+  }
+  
+  .detail__value {
+    text-align: right;
+  }
