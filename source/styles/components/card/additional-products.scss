@@ -1,0 +1,47 @@
+.additional-products {
+    padding: 20px 20px 23px;
+    border-bottom: 1px solid $bg-grey-3;
+}
+
+.additional-products__title {
+    font-family: Oswald;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: $black;
+}
+
+.additional-products__cards {}
+
+.additional-products__card {}
+
+.additional-products__link {}
+
+.additional-products__name {
+    width: 76px;
+    font-family: $oswald;
+    
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    color: #222222;
+    
+
+
+}
+
+.additional-products__details {}
+
+.additional-products__volume {}
+
+.additional-products__price {}
+
+.additional-products__button {}
