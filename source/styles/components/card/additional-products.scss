@@ -10,6 +10,16 @@
     line-height: 24px;
     text-align: center;
     color: $black;
+
+    /*.additional-products__title::before {
+        content: "";
+        position: absolute;
+        top: var(--top);
+        right: 0;
+        width: 100vw;
+        height: 2px;
+        background: $green;
+    }*/
 }
 
 .additional-products__cards {}
