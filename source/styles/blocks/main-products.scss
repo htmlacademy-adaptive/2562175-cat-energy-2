@@ -1,6 +1,10 @@
 .main-products__title {
-  margin-bottom: 39px;
+  margin-bottom: 94px;
   padding-top: 27px;
+
+  @media (min-width: $tablet) {
+
+  }
 }
 
 .main-products__cards {
@@ -17,7 +21,7 @@
     row-gap: 60px;
     padding: 0 30px;
     margin: 0 auto;
-    width: 768px;
+    width: 708px;
     border-top: none;
   }
 }
