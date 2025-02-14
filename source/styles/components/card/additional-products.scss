@@ -11,6 +11,14 @@
   text-align: center;
   color: $black;
 
+  @media (min-width: $tablet) {
+    font-size: 32px;
+    line-height: 32px;
+    color: $black;
+
+
+  }
+
   /* .additional-products__title::before {
        content: "";
        position: absolute;
@@ -54,7 +62,4 @@
 .additional-products__button {}
 
 
-.main-products {
-
-}
-
+.main-products {}

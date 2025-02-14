@@ -1,6 +1,45 @@
 .more {
   padding: 24px 20px 23px;
   border-bottom: 1px solid $bg-grey-3;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url("/source/images/svg/icon-plus-mobile.svg");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet) {
+      width: 60px;
+      height: 60px;
+      background-image: url("/source/images/svg/icon-plus-tablet.svg");
+      background-size: 60px 60px;
+      top: 49px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (min-width: $tablet) {
+    padding: 298px 0 40px;
+   /* min-height: 164px;*/
+    width: 324px;
+    position: relative;
+
+    &::after {
+      content: "";
+      border: 1px solid $bg-grey-1;
+      height: calc(100% - 71px);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
 }
 
 .more__image {
@@ -17,6 +56,12 @@
   color: #111111;
   margin: 0;
   padding-top: 20px;
+
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .more__info {
@@ -26,6 +71,11 @@
   text-align: center;
   margin: 0;
   padding: 8px 0 19px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .more__batton {
@@ -39,4 +89,5 @@
   font-family: $oswald;
   font-size: 16px;
   line-height: 20px;
+  margin: 0 20px;
 }
