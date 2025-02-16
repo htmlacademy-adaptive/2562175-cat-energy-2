@@ -1,5 +1,5 @@
 .more {
-  padding: 24px 20px 23px;
+  padding: 64px 20px 23px;
   border-bottom: 1px solid $bg-grey-3;
   position: relative;
 
@@ -9,26 +9,29 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    background-image: url("/source/images/svg/icon-plus-mobile.svg");
+    background-image: url("../../images/svg/icon-plus-mobile.svg");
     background-size: 30px 30px;
     background-repeat: no-repeat;
+    top: 26px;
+    left: calc(50% - 15px);
 
     @media (min-width: $tablet) {
       width: 60px;
       height: 60px;
-      background-image: url("/source/images/svg/icon-plus-tablet.svg");
+      background-image: url("../../images/svg/icon-plus-tablet.svg");
       background-size: 60px 60px;
-      top: 49px;
+      top: 122px;
       left: 50%;
       transform: translateX(-50%);
     }
   }
 
   @media (min-width: $tablet) {
-    padding: 298px 0 40px;
-   /* min-height: 164px;*/
+    padding: 233px 0 40px;
+    //min-height: 136px;
     width: 324px;
     position: relative;
+    border-bottom: none;
 
     &::after {
       content: "";
@@ -38,13 +41,14 @@
       bottom: 0;
       left: 0;
       width: 100%;
+      z-index: -1;
     }
   }
 }
 
-.more__image {
-  text-align: center;
-}
+//.more__image {
+//text-align: center;
+//}
 
 .more__title {
   font-family: $oswald;
@@ -54,13 +58,15 @@
   text-transform: uppercase;
   text-align: center;
   color: #111111;
-  margin: 0;
-  padding-top: 20px;
+  //padding-top: 20px;
+  margin-bottom: 8px;
 
 
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 24px;
+    width: 134px;
+    margin: 0 auto 23px;
   }
 }
 
@@ -69,19 +75,20 @@
   font-weight: 400;
   line-height: 16px;
   text-align: center;
-  margin: 0;
-  padding: 8px 0 19px;
+  //padding: 8px 0 19px;
+  margin-bottom: 21px;
+  margin-top: 0;
 
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 18px;
+    width: 170px;
+    margin: 0 auto 82px;
   }
 }
 
 .more__batton {
   display: block;
-  padding-top: 12px;
-  padding-bottom: 10px;
   text-align: center;
   text-decoration: none;
   background-color: $bg-grey-1;
@@ -89,5 +96,10 @@
   font-family: $oswald;
   font-size: 16px;
   line-height: 20px;
-  margin: 0 20px;
+  //margin-bottom: 46px;
+  padding: 10px 0;
+
+  @media (min-width: $tablet) {
+    margin: 0 37px;
+  }
 }

@@ -1,9 +1,9 @@
 .main-products__title {
-  margin-bottom: 94px;
+  margin-bottom: 39px;
   padding-top: 27px;
 
   @media (min-width: $tablet) {
-
+    margin-bottom: 94px;
   }
 }
 
@@ -17,8 +17,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    column-gap: 60px;
-    row-gap: 111px;
+    gap: 70px 60px;
     padding: 0 30px;
     margin: 0 auto;
     width: 708px;
