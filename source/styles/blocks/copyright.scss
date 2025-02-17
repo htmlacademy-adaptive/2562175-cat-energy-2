@@ -23,10 +23,10 @@
 }
 
 .copyright__logo {
-  // mask-image: url("../../images/logo/logo-academy.svg");
-  // mask-size: 27px 34px;
-  // mask-repeat: no-repeat;
-  //background-color: #666666;
+  mask-image: url("../../images/logo/logo-academy.svg");
+  mask-size: 27px 34px;
+  mask-repeat: no-repeat;
+  background-color: #666666;
 
   &:hover,
   &:focus {
