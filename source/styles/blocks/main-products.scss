@@ -1,9 +1,21 @@
+.main-products {
+  @media (min-width: $desktop) {
+    width: 1220px;
+    margin: 0 auto 72px;
+  }
+}
+
 .main-products__title {
   margin-bottom: 39px;
-  padding-top: 27px;
+  padding-top: 26px;
 
   @media (min-width: $tablet) {
     margin-bottom: 94px;
+    padding-top: 67px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 89px;
   }
 }
 

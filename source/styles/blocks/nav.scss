@@ -150,3 +150,36 @@
     }
   }
 }
+
+.nav__link--catalog {
+  font-family: $oswald;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  display: block;
+  padding: 22px 5px 23px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $black;
+
+  @media (min-width: $tablet) {
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  @media (min-width: $desktop) {
+    line-height: 30px;
+    text-align: left;
+  }
+}
