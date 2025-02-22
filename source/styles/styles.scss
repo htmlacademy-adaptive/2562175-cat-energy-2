@@ -3,9 +3,8 @@
 @import "./common/fonts.scss";
 @import "./common/global.scss";
 @import "./common/visually-hidden.scss";
-@import "./components/card/additional-products.scss";
-@import "./components/card/subscription.scss";
-@import "./components/card/input.scss";
+@import "./components/special-title.scss";
+@import "./components/input.scss";
 @import "./components/card/more.scss";
 @import "./components/card/inner-title.scss";
 @import "./components/card/detail.scss";
@@ -23,3 +22,5 @@
 @import "./blocks/copyright.scss";
 @import "./blocks/social.scss";
 @import "./blocks/main-products.scss";
+@import "./blocks/additional-products.scss";
+@import "./blocks/subscription.scss";
