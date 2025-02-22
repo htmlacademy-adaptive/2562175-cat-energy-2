@@ -1,6 +1,8 @@
 .invitation {
   display: flex;
   justify-content: space-between;
+  background-color: $bg-grey-1;
+  padding-top: 26px;
 }
 
 .invitation__title {
