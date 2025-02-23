@@ -4,14 +4,14 @@
   line-height: 30px;
   text-transform: uppercase;
   border: 1px solid #cdcdcd;
-  height: 52px;
+  height: 55px;
   padding-left: 10px;
   width: calc(100% - 40px);
   margin: 0 20px 16px;
   box-sizing: border-box;
   color: $text;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     margin: 0;
     flex-grow: 1;
     width: auto;

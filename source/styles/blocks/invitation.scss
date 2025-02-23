@@ -2,11 +2,9 @@
   display: flex;
   justify-content: space-between;
   background-color: $bg-grey-1;
-  padding-top: 24;
-
-  @media(min-width: $tablet) {
-    
-  }
+  padding-top: 27px;
+  box-sizing: border-box;
+  min-height: 112px;
 }
 
 .invitation__title {
