@@ -15,7 +15,9 @@
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 89px;
+    margin-bottom: 94px;
+    padding-top: 78px;
+    margin-left: 0;
   }
 }
 
@@ -29,11 +31,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 70px 60px;
+    gap: 66px 60px;
     padding: 0 30px;
     margin: 0 auto;
     width: 708px;
     border-top: none;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 71px 63px;
+    padding: 0;
+    margin: 0 auto;
+    width: 1220px;
   }
 }
 

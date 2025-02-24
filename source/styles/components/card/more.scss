@@ -33,6 +33,11 @@
     position: relative;
     border-bottom: none;
 
+    @media (min-width: $desktop) {
+      width: 245px;
+      padding: 220px 0 40px;
+    }
+
     &::after {
       content: "";
       border: 1px solid $bg-grey-1;
@@ -68,6 +73,10 @@
     width: 134px;
     margin: 0 auto 23px;
   }
+
+  @media (min-width: $desktop) {
+    margin: 0 auto 28px;
+  }
 }
 
 .more__info {
@@ -84,6 +93,10 @@
     line-height: 18px;
     width: 170px;
     margin: 0 auto 82px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 auto 90px;
   }
 }
 

@@ -1,6 +1,10 @@
 .copyright {
   margin: 18px 20px 0;
   padding: 0;
+
+  @media (min-width: $tablet) {
+    margin: -51px 29px 0;
+  }
 }
 
 .copyright__link {

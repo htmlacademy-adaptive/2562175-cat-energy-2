@@ -427,7 +427,8 @@
       </h2>
       <p class="subscription__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
       <form class="subscription__form" action="kuklachev@gmail.com">
-        <input class="input" type="email" value="kuklachev@gmail.com" placeholder="Введите адрес почты" required>
+        <label class="visually-hidden" for="email"></label>
+        <input class="input" id="email" name="mail" type="email" value="kuklachev@gmail.com" placeholder="Введите адрес почты" required>
         <button class="subscription__button" type="submit">Подписаться</button>
       </form>
     </section>

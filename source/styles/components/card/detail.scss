@@ -7,10 +7,15 @@
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     border-bottom: 1px solid #cdcdcd;
     gap: 156px;
     justify-content: space-around;
+    padding-bottom: 6px;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 75px;
   }
 }
 
