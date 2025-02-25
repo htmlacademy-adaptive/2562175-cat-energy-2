@@ -26,6 +26,14 @@
   top: 13px;
   left: 20px;
 
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+
   @media (min-width: $tablet) {
     top: 26px;
     left: 3px;

@@ -28,7 +28,6 @@
 
   @media (min-width: $tablet) {
     padding: 233px 0 40px;
-    //min-height: 136px;
     width: 324px;
     position: relative;
     border-bottom: none;
@@ -51,10 +50,6 @@
   }
 }
 
-//.more__image {
-//text-align: center;
-//}
-
 .more__title {
   font-family: $oswald;
   font-size: 16px;
@@ -63,9 +58,7 @@
   text-transform: uppercase;
   text-align: center;
   color: #111111;
-  //padding-top: 20px;
   margin-bottom: 8px;
-
 
   @media (min-width: $tablet) {
     font-size: 20px;
@@ -84,7 +77,6 @@
   font-weight: 400;
   line-height: 16px;
   text-align: center;
-  //padding: 8px 0 19px;
   margin-bottom: 21px;
   margin-top: 0;
 
@@ -109,9 +101,16 @@
   font-family: $oswald;
   font-size: 16px;
   line-height: 20px;
-  //margin-bottom: 46px;
   padding: 10px 0;
   color: $text;
+
+  &:hover {
+    background-color: $bg-grey-3;
+  }
+
+  &:active {
+    background-color: $bg-grey-3;
+  }
 
   @media (min-width: $tablet) {
     margin: 0 37px;

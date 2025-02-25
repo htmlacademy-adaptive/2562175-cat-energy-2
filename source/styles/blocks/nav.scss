@@ -35,7 +35,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid $bg-grey-3;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -60,7 +60,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #ffffff;
+  background-color: $white;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -69,7 +69,7 @@
 }
 
 .nav__item {
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid $bg-grey-3;
 
   @media (min-width: $tablet) {
     border-bottom: none;
@@ -84,7 +84,7 @@
         bottom: 0;
         left: 0;
         height: 2px;
-        background: #68b738;
+        background: $green;
       }
     }
   }
@@ -103,7 +103,7 @@
         bottom: 0;
         left: 0;
         height: 2px;
-        background: #ffffff;
+        background: $white;
       }
     }
   }
@@ -140,7 +140,7 @@
     font-size: 20px;
     line-height: 30px;
     text-align: left;
-    color: #ffffff;
+    color: $white;
 
     &:hover {
       color: rgba(255, 255, 255, 0.6);
@@ -181,7 +181,6 @@
 
   @media (min-width: $desktop) {
     font-size: 20px;
-    line-height: 30px;
     text-align: left;
     line-height: 30px;
     color: #111111;

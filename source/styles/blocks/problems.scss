@@ -152,7 +152,6 @@
   }
 }
 
-
 .problems__item--gain .problems__title {
   &::after {
     top: 16px;
@@ -233,6 +232,10 @@
   display: inline-block;
   position: relative;
 
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -252,6 +255,10 @@
 
   &:hover::after {
     width: 32px;
+  }
+
+  &:active::after {
+    color: rgba(0, 0, 0, 0.3);
   }
 
   @media (min-width: $tablet) {

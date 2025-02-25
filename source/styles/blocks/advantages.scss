@@ -88,7 +88,6 @@
     }
   }
 
-
   &--leaf::before {
     background-image: url("../../images/svg/icon-leaf.svg");
     background-size: 30px 32px;
@@ -108,7 +107,6 @@
     background-image: url("../../images/svg/icon-clock.svg");
     background-size: 26px 31px;
   }
-
 
   @media (min-width: $tablet) {
     &::after {

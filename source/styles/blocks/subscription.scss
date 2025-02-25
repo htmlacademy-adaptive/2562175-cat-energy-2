@@ -30,12 +30,20 @@
     line-height: 32px;
     width: 640px;
   }
+
+  @media (min-width: $desktop) {
+    width: 668px;
+  }
 }
 
 .subscription__form {
   @media (min-width: $tablet) {
     display: flex;
     margin: 0 68px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 345px;
   }
 }
 

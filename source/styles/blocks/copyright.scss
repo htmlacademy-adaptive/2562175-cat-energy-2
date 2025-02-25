@@ -16,13 +16,8 @@
   padding: 0;
   margin-top: 8px;
 
-  &:hover,
-  &:focus {
-    color: #3e3e3e;
-  }
-
   &:active {
-    color: #6b6b6b;
+    color: rgba(17, 17, 17, 0.3);
   }
 }
 
