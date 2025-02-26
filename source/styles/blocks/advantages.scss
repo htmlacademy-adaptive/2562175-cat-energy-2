@@ -1,7 +1,7 @@
 .advantages {
-  padding-top: 20px;
+  padding-top: 19px;
   margin: 0 20px;
-  padding-bottom: 49px;
+  padding-bottom: 29px;
 
   @media (min-width: $tablet) {
     margin: 0 30px;
@@ -9,7 +9,9 @@
   }
 
   @media (min-width: $desktop) {
-    margin: 0 110px;
+    margin: 0 auto;
+    width: 1220px;
+    padding: 0;
   }
 }
 
@@ -25,6 +27,10 @@
     font-size: 60px;
     line-height: 60px;
     margin: -102px 0 71px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 72px;
   }
 }
 

@@ -1,9 +1,9 @@
 .copyright {
-  margin: 18px 20px 0;
+  margin: 0 20px;
   padding: 0;
 
   @media (min-width: $tablet) {
-    margin: -51px 29px 0;
+    margin: 0;
   }
 }
 
@@ -15,24 +15,19 @@
   line-height: 20px;
   padding: 0;
   margin-top: 8px;
-
-  &:active {
-    color: rgba(17, 17, 17, 0.3);
-  }
 }
 
 .copyright__logo {
-  mask-image: url("../../images/logo/logo-academy.svg");
-  mask-size: 27px 34px;
-  mask-repeat: no-repeat;
-  background-color: #666666;
+  color: #666666;
 
   &:hover,
   &:focus {
-    background-color: $green;
+    color: $green;
+    outline: none;
   }
 
   &:active {
-    background-color: rgb(105, 183, 56, 0.3);
+    color: rgba(105, 183, 56, 0.3);
   }
 }
+
