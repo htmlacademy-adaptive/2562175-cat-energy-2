@@ -74,27 +74,27 @@
   @media (min-width: $tablet) {
     border-bottom: none;
   }
-}
 
-@media (min-width: $desktop) {
-  border-bottom: none;
 
-  &:hover {
-    color: rgba(0, 0, 0, 0.3);
-    position: relative;
+  @media (min-width: $desktop) {
+    border-bottom: none;
 
-    &::after {
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      height: 2px;
-      background: $white;
+    &:hover {
+      color: rgba(0, 0, 0, 0.3);
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        background: $white;
+      }
     }
   }
 }
-
 
 .nav__link {
   font-family: $oswald;
@@ -134,34 +134,34 @@
   &:active {
     color: rgba(0, 0, 0, 0.3);
   }
-}
 
-@media (min-width: $desktop) {
-  font-size: 20px;
-  line-height: 30px;
-  text-align: left;
-  color: $white;
 
-  &:hover {
-    color: rgba(255, 255, 255, 0.6);
-    position: relative;
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    color: $white;
 
-    &::after {
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      height: 2px;
-      background: $white;
+    &:hover {
+      color: rgba(255, 255, 255, 0.6);
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        background: $white;
+      }
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
     }
   }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-  }
 }
-
 
 .nav__link-catalog {
   font-family: $oswald;
