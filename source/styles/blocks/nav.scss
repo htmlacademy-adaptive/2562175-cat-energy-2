@@ -73,13 +73,26 @@
 
   @media (min-width: $tablet) {
     border-bottom: none;
-  }
 
+    &:active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        background: $green;
+      }
+    }
+  }
 
   @media (min-width: $desktop) {
     border-bottom: none;
 
-    &:hover {
+    &:active {
       color: rgba(0, 0, 0, 0.3);
       position: relative;
 
@@ -114,27 +127,14 @@
     font-weight: 400;
     line-height: 24px;
 
-    &:hover,
-    &:active {
+    &:hover {
       color: rgba(0, 0, 0, 0.6);
-      position: relative;
+    }
 
-      &::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        height: 2px;
-        background: $green;
-      }
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
     }
   }
-
-  &:active {
-    color: rgba(0, 0, 0, 0.3);
-  }
-
 
   @media (min-width: $desktop) {
     font-size: 20px;
@@ -144,17 +144,6 @@
 
     &:hover {
       color: rgba(255, 255, 255, 0.6);
-      position: relative;
-
-      &::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        height: 2px;
-        background: $white;
-      }
     }
 
     &:active {
@@ -183,32 +172,10 @@
 
     &:hover {
       color: rgba(0, 0, 0, 0.6);
-      position: relative;
-
-      &::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        height: 2px;
-        background: $green;
-      }
     }
 
     &:active {
       color: rgba(0, 0, 0, 0.3);
-      position: relative;
-
-      &::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        height: 2px;
-        background: $green;
-      }
     }
   }
 
@@ -217,21 +184,5 @@
     text-align: left;
     line-height: 30px;
     color: #111111;
-
-    &:hover,
-    &:active {
-      color: rgba(0, 0, 0, 0.6);
-      position: relative;
-
-      &::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        height: 2px;
-        background: $green;
-      }
-    }
   }
 }

@@ -13,7 +13,7 @@
 
   &::after {
     content: "";
-    border: 1px solid $green;
+    border-top: 1px solid $green;
     position: absolute;
     width: 100%;
     top: 10px;

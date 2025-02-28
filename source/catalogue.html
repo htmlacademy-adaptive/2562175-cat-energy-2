@@ -10,6 +10,8 @@
   <link rel="icon" href="favicons/icon-152.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png"><!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -361,56 +363,53 @@
         </li>
       </ul>
     </section>
-    <section class="additional-products">
-      <h2 class="special-title additional-products__title">
+
+    <section class="extra-goods">
+      <h2 class="special-title extra-goods__title">
         <span class="special-title__container">
           <span class="special-title__text">Дополнительные товары</span>
         </span>
       </h2>
-      <ul class="additional-products__cards">
-        <li class="additional-products__card">
-          <a class="additional-products__link" href="#">
-            <h3 class="additional-products__name">Сахарозаменитель</h3>
-            <div class="additional-products__details">
-              <span class="additional-products__volume">1 упаковка (100 г)</span>
-              <span class="additional-products__price">200 ₽</span>
-            </div>
-          </a>
-          <a class="additional-products__button" href="#">Заказать</a>
-        </li>
-        <li class="additional-products__card">
-          <a class="additional-products__link" href="#">
-            <h3 class="additional-products__name">питьевая вода</h3>
-            <div class="additional-products__details">
-              <span class="additional-products__volume">5 литров</span>
-              <span class="additional-products__price">50 ₽</span>
-            </div>
-          </a>
-          <a class="additional-products__button" href="#">Заказать</a>
-        </li>
-        <li class="additional-products__card">
-          <a class="additional-products__link" href="#">
-            <h3 class="additional-products__name">молоко</h3>
-            <div class="additional-products__details">
-              <span class="additional-products__volume">1 литр</span>
-              <span class="additional-products__price">100 ₽</span>
-            </div>
-          </a>
-          <a class="additional-products__button" href="#">Заказать</a>
-        </li>
-        <li class="additional-products__card">
-          <a class="additional-products__link" href="#">
-            <h3 class="additional-products__name">витамины</h3>
-            <div class="additional-products__details">
-              <span class="additional-products__volume">1 упаковка (30 г)</span>
-              <span class="additional-products__price">300 ₽</span>
-            </div>
-          </a>
-          <a class="additional-products__button" href="#">Заказать</a>
-        </li>
-      </ul>
-      <div class="additional-products__block">
-        <p class="additional-products__text">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
+      <div class="extra-goods__wrapper">
+        <ul class="extra-goods__list">
+          <li class="extra-goods__item simple-card">
+            <h3 class="simple-card__title">Сахарозаменитель</h3>
+            <dl class="simple-card__price">
+              <dt>1 упаковка (100 г)</dt>
+              <dd>200</dd>
+            </dl>
+            <a class="simple-card__button button button--primary" href="#">Заказать</a>
+          </li>
+          <li class="extra-goods__item simple-card">
+            <h3 class="simple-card__title">Питьевая вода</h3>
+            <dl class="simple-card__price">
+              <dt>5 литров</dt>
+              <dd>50</dd>
+            </dl>
+            <a class="simple-card__button button button--primary" href="#">Заказать</a>
+          </li>
+          <li class="extra-goods__item simple-card">
+            <h3 class="simple-card__title">Молоко</h3>
+            <dl class="simple-card__price">
+              <dt>1 литр</dt>
+              <dd>100</dd>
+            </dl>
+            <a class="simple-card__button button button--primary" href="#">Заказать</a>
+          </li>
+          <li class="extra-goods__item simple-card">
+            <h3 class="simple-card__title">Витамины</h3>
+            <dl class="simple-card__price">
+              <dt>1 упаковка (30 г)</dt>
+              <dd>300</dd>
+            </dl>
+            <a class="simple-card__button button button--primary" href="#">Заказать</a>
+          </li>
+        </ul>
+        <a class="extra-goods__link" href="#">
+          <div class="extra-goods__promo promo">
+            <p class="promo__text">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
+          </div>
+        </a>
       </div>
     </section>
     <section class="subscription">
@@ -470,8 +469,9 @@
     </section>
     <div class="main-footer__wrapper">
       <a class="main-footer__logo" href="#">
-        <svg class="main-footer__logo-image" width="101" height="18" viewBox="0 0 101 18"
-          aria-label="Товарный знак компании Cat Energy" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <span class="visually-hidden">Товарный знак компании Cat Energy</span>
+        <svg class="main-footer__logo-image" role="img" width="101" height="18" viewBox="0 0 101 18" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
           <use href="./icons/stack.svg#logo-text"></use>
         </svg>
       </a>
@@ -495,7 +495,8 @@
       <div class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a>
         <a class="copyright__logo" href="https://htmlacademy.ru/">
-          <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <span class="visually-hidden">Товарный знак компании HTML Academy</span>
+          <svg width="27" height="34" role="img" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <use href="./icons/stack.svg#html-academy-logo"></use>
           </svg>
         </a>

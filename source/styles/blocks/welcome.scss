@@ -43,11 +43,12 @@
       bottom: unset;
       top: -112px;
       background-repeat: no-repeat;
-      background-position: 0 0;
-      width: 720px;
-      height: 694px;
+      width: 50%;
+      height: calc(100% + 115px);
       position: absolute;
-      background-size: 720px 694px;
+      background-size: auto 100%;
+      background-position: right top;
+      background-color: #4f4e53;
       background-image:
         image-set(url("../../images/backgrounds/index-background-desktop@1x.webp") type("image/webp") 1x,
         url("../../images/backgrounds/index-background-desktop@2x.webp") type("image/webp") 2x,

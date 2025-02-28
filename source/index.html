@@ -8,7 +8,9 @@
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   <link rel="icon" href="favicons/icon-152.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png"><!-- 180×180 -->
+  <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -205,8 +207,9 @@
     </section>
     <div class="main-footer__wrapper">
       <a class="main-footer__logo" href="#">
-        <svg class="main-footer__logo-image" width="101" height="18" viewBox="0 0 101 18"
-          aria-label="Товарный знак компании Cat Energy" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <span class="visually-hidden">Товарный знак компании Cat Energy</span>
+        <svg class="main-footer__logo-image" role="img" width="101" height="18" viewBox="0 0 101 18" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
           <use href="./icons/stack.svg#logo-text"></use>
         </svg>
       </a>
@@ -230,7 +233,8 @@
       <div class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a>
         <a class="copyright__logo" href="https://htmlacademy.ru/">
-          <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <span class="visually-hidden">Товарный знак компании HTML Academy</span>
+          <svg width="27" height="34" role="img" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <use href="./icons/stack.svg#html-academy-logo"></use>
           </svg>
         </a>
