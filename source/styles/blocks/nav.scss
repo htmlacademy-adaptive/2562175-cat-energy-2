@@ -3,30 +3,114 @@
 }
 
 .nav__toggle {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   position: absolute;
   top: -45px;
-  right: 18px;
+  right: 23px;
   border: none;
   background-color: #ff0000;
+  display: none;
+}
+
+.nav--closed .nav__toggle {
+  display: block;
+  background: url("../../images/svg/burger-menu-mobile.svg");
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.nav--opened .nav__toggle {
+  display: block;
+  background: url("../../images/svg/cross-for-close-mobile-menu.svg");
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .nav__list {
   padding: 0;
   margin: 0;
   list-style: none;
-  border-top: 1px solid #ff0000;
+  border-top: 1px solid $bg-grey-3;
 
+  @media (min-width: $tablet) {
+    display: flex;
+    border-top: none;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 0 34px;
+  }
+}
+
+.nav--closed .nav__list {
   display: none;
+
+  @media (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.nav--opened .nav__list {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $white;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    position: static;
+  }
 }
 
 .nav__item {
-  border-bottom: 1px solid #ff0000;
+  border-bottom: 1px solid $bg-grey-3;
+
+  @media (min-width: $tablet) {
+    border-bottom: none;
+
+    &:active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        background: $green;
+      }
+    }
+  }
+
+  @media (min-width: $desktop) {
+    border-bottom: none;
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        background: $white;
+      }
+    }
+  }
 }
 
 .nav__link {
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   font-size: 20px;
   font-weight: 400;
   line-height: 20px;
@@ -35,5 +119,70 @@
   padding: 22px 5px 23px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000000;
+  color: $black;
+
+  @media (min-width: $tablet) {
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    color: $white;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+.nav__link-catalog {
+  font-family: $oswald;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  display: block;
+  padding: 22px 5px 23px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $black;
+
+  @media (min-width: $tablet) {
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    text-align: left;
+    line-height: 30px;
+    color: #111111;
+  }
 }
