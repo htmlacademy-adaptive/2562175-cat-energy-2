@@ -1,0 +1,79 @@
+.subscription {
+  padding: 0 0 40px;
+
+  @media (min-width: $tablet) {
+    padding: 0 0 80px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 0 104px;
+  }
+}
+
+.subscription__title {
+  margin: 0 0 32px;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 29px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 35px;
+  }
+}
+
+.subscription__text {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 24px;
+  color: $black;
+  margin: 0 auto 24px;
+  padding: 0;
+  text-align: center;
+  width: 280px;
+
+  @media (min-width: $tablet) {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    width: 640px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 668px;
+  }
+}
+
+.subscription__form {
+  @media (min-width: $tablet) {
+    display: flex;
+    margin: 0 68px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 auto;
+    width: 751px;
+  }
+}
+
+.subscription__button {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  text-decoration: none;
+  background-color: $green;
+  text-transform: uppercase;
+  font-family: $oswald;
+  font-size: 20px;
+  line-height: 26px;
+  color: $white;
+  margin: 0 20px;
+  border: none;
+  width: calc(100% - 40px);
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    width: 256px;
+  }
+}

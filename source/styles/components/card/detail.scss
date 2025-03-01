@@ -1,0 +1,28 @@
+.detail {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 16px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid $bg-grey-4;
+    gap: 156px;
+    justify-content: space-around;
+    padding-bottom: 6px;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 75px;
+  }
+}
+
+.detail__name {
+  text-align: left;
+}
+
+.detail__value {
+  text-align: right;
+}

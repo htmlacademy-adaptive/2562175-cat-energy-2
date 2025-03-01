@@ -1,19 +1,32 @@
-/* GLOBAL */
-
 @import "./common/variables.scss";
 @import "./common/mixins.scss";
 @import "./common/fonts.scss";
 @import "./common/global.scss";
 @import "./common/visually-hidden.scss";
-
-
-/* BLOCKS */
-
+@import "./components/special-title.scss";
+@import "./components/input.scss";
+@import "./components/button.scss";
+@import "./components/card/more.scss";
+@import "./components/card/inner-title.scss";
+@import "./components/card/detail.scss";
+@import "./components/card/card.scss";
 @import "./blocks/page.scss";
+@import "./blocks/main.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/nav.scss";
 @import "./blocks/welcome.scss";
 @import "./blocks/problems.scss";
 @import "./blocks/advantages.scss";
 @import "./blocks/achievements.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/main-footer.scss";
 @import "./blocks/invitation.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/social.scss";
+@import "./blocks/main-products.scss";
+@import "./blocks/additional-products.scss";
+@import "./blocks/subscription.scss";
+@import "./blocks/map.scss";
+@import "./blocks/extra-goods.scss";
+@import "./blocks/simple-card.scss";
+@import "./blocks/promo.scss";

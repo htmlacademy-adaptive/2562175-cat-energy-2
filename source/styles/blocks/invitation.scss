@@ -1,3 +1,20 @@
+.invitation {
+  display: flex;
+  justify-content: space-between;
+  background-color: $bg-grey-1;
+  padding-top: 27px;
+  box-sizing: border-box;
+  min-height: 112px;
+
+  @media (min-width: $tablet) {
+    padding-top: 61px;
+    box-sizing: border-box;
+    min-height: 112px;
+    gap: 218px;
+    padding-bottom: 34px;
+  }
+}
+
 .invitation__title {
   font-family: $oswald;
   font-size: 16px;
@@ -5,11 +22,67 @@
   line-height: 20px;
   text-align: left;
   color: #111111;
+  text-transform: uppercase;
+  padding: 0 18px 0 20px;
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 0 78px 0 70px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 0 29px 0 80px;
+  }
 }
 
 .invitation__address {
+  padding: 0 23px 0 0;
+  margin: 0;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   text-align: left;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    text-align: right;
+    padding-right: 70px;
+    padding-bottom: 18px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 16px;
+    padding-right: 78px;
+    text-align: left;
+  }
+}
+
+.invitation__city {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    text-align: right;
+    padding-right: 70px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 16px;
+    padding-right: 78px;
+    text-align: left;
+  }
+}
+
+.invitation__direction {
+  display: flex;
+  flex-direction: column;
 }

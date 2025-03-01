@@ -1,0 +1,155 @@
+.card {
+  padding: 21px 20px 22px;
+  border-bottom: 1px solid $bg-grey-3;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    width: 324px;
+    min-height: 430px;
+    padding: 0 37px 40px;
+    background-color: $bg-grey-1;
+
+    @media (min-width: $desktop) {
+      width: 245px;
+      min-height: 500px;
+    }
+
+    &::before {
+      content: "";
+      height: 71px;
+      width: 100%;
+      background-color: $white;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.card__container {
+  text-decoration: none;
+  display: flex;
+  align-items: flex-start;
+  min-height: 107px;
+  margin-bottom: 14px;
+  justify-content: space-around;
+  max-width: 417px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet) {
+    display: block;
+    position: relative;
+    padding-top: 234px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 222px;
+  }
+}
+
+.card__image-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 200px;
+  }
+
+  @media (min-width: $desktop) {
+    left: calc(100% - 70px);
+  }
+}
+
+.card__image {
+  border: none;
+}
+
+.card__info {
+  width: 140px;
+  min-height: 103px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 17px;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 24px;
+  }
+}
+
+.card__name {
+  width: 76px;
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 20px;
+  color: $black;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222222;
+    min-width: 159px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 24px;
+    color: #222222;
+  }
+}
+
+.card__details {
+  width: 140px;
+  padding: 0;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 16px;
+  }
+}
+
+.card__batton {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  background-color: $green;
+  text-transform: uppercase;
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

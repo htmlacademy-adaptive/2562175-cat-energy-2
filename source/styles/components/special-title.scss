@@ -1,0 +1,66 @@
+.special-title {
+  font-family: $oswald;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: $black;
+  margin: 0;
+  padding-left: 0;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+
+  &::after {
+    content: "";
+    border-top: 2px solid $green;
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    z-index: -1;
+    left: 0;
+
+    @media (min-width: $tablet) {
+      top: 13px;
+    }
+
+    @media (min-width: $desktop) {
+      top: 16px;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 32px;
+    line-height: 32px;
+    padding: 0 0 0 30px;
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.special-title__container {
+  @media (min-width: $desktop) {
+    display: block;
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.special-title__text {
+  display: inline-block;
+  padding: 0 40px 0 20px;
+  background-color: $white;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    padding: 0 40px 36px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 0 -51px;
+  }
+}
