@@ -1,7 +1,7 @@
 .main-products {
   @media (min-width: $desktop) {
     width: 1220px;
-    margin: 0 auto 72px;
+    margin: 0 auto;
   }
 }
 
@@ -31,7 +31,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 66px 60px;
+    gap: 68px 60px;
     padding: 0 30px;
     margin: 0 auto;
     width: 708px;

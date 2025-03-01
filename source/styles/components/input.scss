@@ -20,6 +20,11 @@
     border: 1px solid $text;
   }
 
+  &:invalid:not(:placeholder-shown) {
+    border-color: transparent;
+    outline: 2px solid #ff8282;
+  }
+
   @media (min-width: $tablet) {
     margin: 0;
     flex-grow: 1;

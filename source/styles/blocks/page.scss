@@ -1,3 +1,28 @@
 .page__body {
   margin: 0;
 }
+
+.page__body--index {
+  @media (min-width: $desktop) {
+    &::before {
+      content: "";
+      width: 50%;
+      height: 600px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #454449;
+    }
+
+    &::after {
+      content: "";
+      width: 50%;
+      height: 600px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: $green;
+      opacity: 0.85;
+    }
+  }
+}
