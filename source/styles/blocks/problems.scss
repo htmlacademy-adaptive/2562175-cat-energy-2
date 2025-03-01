@@ -12,6 +12,7 @@
 
   @media (min-width: $desktop) {
     display: flex;
+    flex-wrap: wrap;
     gap: 80px;
     margin-bottom: 26px;
   }
@@ -32,8 +33,7 @@
   @media (min-width: $desktop) {
     padding: 62px 73px 60px 19px;
     margin: 0;
-    max-height: 374px;
-    min-width: 570px;
+    width: 570px;
     box-sizing: border-box;
   }
 }

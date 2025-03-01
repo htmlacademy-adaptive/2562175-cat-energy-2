@@ -1,0 +1,6 @@
+.main {
+  @media (min-width: $desktop) {
+    position: relative;
+    z-index: 1;
+  }
+}

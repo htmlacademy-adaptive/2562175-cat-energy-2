@@ -13,7 +13,7 @@
 
   &::after {
     content: "";
-    border-top: 1px solid $green;
+    border-top: 2px solid $green;
     position: absolute;
     width: 100%;
     top: 10px;
@@ -52,7 +52,7 @@
 
 .special-title__text {
   display: inline-block;
-  padding: 0 40px 34px 20px;
+  padding: 0 40px 0 20px;
   background-color: $white;
   position: relative;
 
